@@ -1,0 +1,43 @@
+{
+  "name": "react-with-tests",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./build/index.js",
+  "dependencies": {
+    "css-loader": "^5.0.1",
+    "file-loader": "^6.2.0",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "react-scripts": "^4.0.1",
+    "style-loader": "^2.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9",
+    "@babel/plugin-proposal-class-properties": "^7.12.1",
+    "@babel/plugin-syntax-jsx": "^7.12.1",
+    "@babel/plugin-transform-modules-commonjs": "^7.12.1",
+    "@babel/preset-env": "^7.12.7",
+    "@babel/preset-react": "^7.12.7",
+    "babel-jest": "^26.6.3",
+    "babel-loader": "^8.2.1",
+    "customize-cra": "^1.0.0",
+    "html-webpack-plugin": "^4.5.0",
+    "jest": "^26.6.3",
+    "node-sass": "^5.0.0",
+    "path": "^0.12.7",
+    "react-app-rewired": "^2.1.6",
+    "react-dev-utils": "^11.0.1",
+    "scss-loader": "0.0.1",
+    "webpack": "^5.6.0",
+    "webpack-cli": "^4.2.0",
+    "webpack-dev-server": "^3.11.0"
+  },
+  "scripts": {
+    "build": "react-scripts build",
+    "test": "jest --no-cache --config ./Jest.config.js",
+    "eject": "react-scripts eject",
+    "webpack-dev-server": "webpack-dev-server",
+    "start": "SET NODE_ENV=development& set BABEL_ENV=development& webpack serve --mode=development",
+    "prod": "webpack --mode=production"
+  }
+}
